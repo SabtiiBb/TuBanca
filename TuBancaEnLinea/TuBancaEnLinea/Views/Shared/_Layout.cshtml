@@ -1,41 +1,63 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
-    @Styles.Render("~/Content/css")
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css/")
+    <meta name="description" content="Soluciones diseñadas para ti. Con créditos personales, tarjetas de crédito, cuentas de ahorro y un amplia gama de servicios financieros a tu disposición.">
+    <meta name="title" content="Home">
+    <link href="~/Content/Site.css" rel="stylesheet"/>
+    <meta name="keywords" content="banco agrícola, banco agricola el salvador, ebanca, ebanca personas, banco agricola en linea, bancoagricola">
+    <link rel="shortcut icon" href="~/Content/img/lg.png"/>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Nombre de aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
+<body class=" Ba">
+    <section>
+        <header class="BA-head">
+            <nav class="temp-nav">
+                <div class="link-temp">
+                    <a href="index.html" class="link-tp">
+                        <i class="fas fa-home"></i>
+                    </a>
+                    <a href="" class="link-tp">
+                        Preferencial
+                    </a>
+                    <a href="" class="link-tp">
+                        Pyme
+                    </a>
+                    <a href="" class="link-tp">
+                        Empresas y Gobierno
+                    </a>
+                    <a href="" class="btn-temp-1" type="submit">Atención al cliente</a>
+                    <a href="" class="btn-temp" type="submit">Puntos de servicio</a>
+                </div>
+            </nav>
+            <nav class="menuBA ">
+                <div>
+                    <a href="" class="img-nav"><img src="~/Content/img/logo.png" /></a>
+                    <a href="" class="nav-perm">Cuentas</a>
+                    <a href="" class="nav-perm">Tarjetas</a>
+                    <a href="" class="nav-perm">Créditos</a>
+                    <a href="" class="nav-perm">Inversiones</a>
+                    <a href="" class="nav-perm">Seguros</a>
+                    <a href="" class="nav-perm">Salvadoreños en el Exterior</a>
+                    <a href="" class="nav-perm">Promociones</a>
+                    <a href="" class="e-btn">e-Banca Personas <i class="fas fa-lock"></i></a>
+                </div>
+            </nav>
+        </header>
+    </section>
         @RenderBody()
-        <hr />
+    <section>
         <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+            
         </footer>
-    </div>
-
+    </section>    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/7a98527200.js " crossorigin="anonymous "></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

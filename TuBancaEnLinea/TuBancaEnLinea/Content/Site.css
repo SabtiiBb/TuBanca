@@ -1,24 +1,212 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿* {
+    margin: 0;
+    padding: 0;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.Ba {
+     display:block;
+     font-family: 'Open Sans', sans-serif;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+
+/* .temp-nav {
+    display: inline-block;
+    background-color: #5B5B5B;
+    width: 100%;
+} */
+
+.BA-head{
+    max-width:99%;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+nav.temp-nav {
+    display: flex;
+    padding: 0.5rem;
+    background-color: #5B5B5B;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
+
+a.link-tp {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+a.link-tp:hover {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+.btn-temp-nav {
+    right: 0;
+}
+
+a.btn-temp {
+    color: #fff;
+    right: 0;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+a.btn-temp-1 {
+    background-color: transparent;
+    border-radius: 28px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 2px 19px;
+    text-decoration: none;
+    margin-left: 8rem;
+}
+
+a.btn-temp-1:hover {
+    color: #ffffff;
+    background-color: #00448C;
+    text-decoration: none;
+}
+
+a.btn-temp-1:active {
+    background-color: #00448C;
+    color: #ffffff;
+    border-color: transparent;
+    text-decoration: none;
+}
+
+.btn-temp-nav {
+    align-content: flex-end;
+}
+
+a.btn-temp {
+    background-color: transparent;
+    border-radius: 28px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 2px 19px;
+    text-decoration: none;
+}
+
+a.btn-temp:hover {
+    color: #ffffff;
+    background-color: #00448C;
+    text-decoration: none;
+}
+
+a.btn-temp:active {
+    background-color: #00448C;
+    color: #ffffff;
+    border-color: transparent;
+    text-decoration: none;
+}
+
+nav.menuBA {
+    display: flex;
+    padding: 1rem;
+    background-color: #fff;
+    width: 100%;
+    max-width:100%;
+    align-items: center;
+    justify-content: center;
+}
+
+nav.menuBA div {
+    text-align: center;
+}
+
+nav.menuBA div a {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+nav.menuBA a img {
+    width: 11%;
+}
+
+a.nav-perm {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a.nav-perm:hover {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 2px solid #FFDC41;
+}
+
+a.e-btn {
+    background-color: #FFD200;
+    border-radius: 20px;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+a.e-btn:hover {
+    background-color: #FFD200;
+    color: #333333;
+    text-decoration: none;
+}
+
+a.e-btn:active {
+    background-color: #0062CC;
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: 0 0 0 0.2rem rgb(42, 88, 214);
+}
+
+.responsive {
+    max-width: 100%;
+    margin: auto;
+    max-height: 600px;
+}
+
+.cards-tools{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    background-color:#F5F7F9;
+}
+
+.container-cards-e{
+    width:80%;
+    display:flex;
+}
+
+h2.BancaMovil{
+   font-family: 'Nunito', sans-serif;
+   color:#003387;
+   margin-left: 1.5rem;
+}
+
+h5.card-title{
+   font-family: 'Nunito', sans-serif;
+   color:black;
+}
+
+p.card-text{
+   font-family: 'Nunito', sans-serif;
+   color:#5B5B5B;
+   font-weight:700;
+}
+
+.card{
+    margin-left:1rem;
+}
+
+card-banca{
+    width:60%;
+}
+
+
