@@ -169,8 +169,15 @@
     <Content Include="Content\img\BancaMovil.jpg" />
     <Content Include="Content\img\e-banca.jpg" />
     <Content Include="Content\img\Edicio-Administrativo-SJM.jpg" />
+    <Content Include="Content\img\icon-1-1.png" />
+    <Content Include="Content\img\icon-2.png" />
+    <Content Include="Content\img\icon-3.png" />
+    <Content Include="Content\img\icon-4.png" />
+    <Content Include="Content\img\icon-5.png" />
+    <Content Include="Content\img\icon-6.png" />
     <Content Include="Content\img\lg.png" />
     <Content Include="Content\img\logo.png" />
+    <Content Include="Content\style.css" />
     <Content Include="Content\toastr.css" />
     <Content Include="Content\toastr.min.css" />
     <Content Include="favicon.ico" />
