@@ -13,7 +13,7 @@
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body class=" Ba">
+<body class="Ba">
     <section>
         <header class="BA-head">
             <nav class="temp-nav">
@@ -62,31 +62,5 @@
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 
-    <script>
-
-        toastr.options = {
-            "closeButton": false,
-            "debug": false,
-            "newestOnTop": false,
-            "progressBar": false,
-            "positionClass": "toast-top-right",
-            "preventDuplicates": false,
-            "onclick": null,
-            "showDuration": "300",
-            "hideDuration": "1000",
-            "timeOut": "5000",
-            "extendedTimeOut": "1000",
-            "showEasing": "swing",
-            "hideEasing": "linear",
-            "showMethod": "fadeIn",
-            "hideMethod": "fadeOut"
-        }
-
-        toastr["success"]("My name is Inigo Montoya. You killed my father. Prepare to die!")
-
-
-        $(document).ready(function () {
-        });
-    </script>
 </body>
 </html>

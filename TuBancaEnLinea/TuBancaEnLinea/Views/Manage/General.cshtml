@@ -1,8 +1,72 @@
 ﻿
 @{
-    ViewBag.Title = "General";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Banco Agrícola";
+    Layout = "~/Views/Shared/_GeneralLayout.cshtml";
 }
 
-Cards
-
+<div class="table-DAP">
+    <table>
+        <tr>
+            <th>
+                &nbsp; Total cuentas: &nbsp;
+            </th>
+            <th>
+                &nbsp; Total préstamos: &nbsp;
+            </th>
+            <th>
+                &nbsp; Total DAP: &nbsp;
+            </th>
+        </tr>
+        <tr>
+            <td>&nbsp;$0.00&nbsp;</td>
+            <td>&nbsp;$0.00&nbsp;</td>
+            <td>&nbsp;$0.00&nbsp;</td>
+        </tr>
+    </table>
+</div>
+<section>
+    <div class="estadocuentacard">
+        <div class="grid-container-estado">
+            <div class="cuentacard">
+                <div class="textotitle">
+                    <p>                        
+                        1234567890 Cuenta
+                    </p>
+                </div>
+                <div class="saldo">
+                    <div class="disponible">
+                        <p>
+                            $0.00
+                            <br />
+                            <span class="campo">SALDO DISPONIBLE</span>
+                        </p>
+                    </div>
+                    <div class="numerocuenta">
+                        <p>
+                            1234567890<br />
+                            <span class="campo">N°</span>
+                        </p>                       
+                    </div>
+                    <div class="Movimientos">
+                        <p>
+                            Movimientos
+                        </p>
+                    </div>
+                    <div class="servicios">
+                        <p>
+                            Pago de servicios
+                        </p>
+                    </div>
+                </div>
+                <div class="estado">
+                    <p>
+                        ACTIVA
+                        <br />
+                        <span class="campo">ACTIVA</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

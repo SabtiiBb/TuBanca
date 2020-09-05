@@ -16,7 +16,7 @@
 } */
 
 .BA-head{
-    max-width:99%;
+    max-width:100%;
 }
 
 nav.temp-nav {
@@ -182,6 +182,7 @@ a.e-btn:active {
 .container-cards-e{
     width:80%;
     display:flex;
+    justify-content:center;
 }
 
 h2.BancaMovil{
@@ -201,7 +202,7 @@ p.card-text{
    font-weight:700;
 }
 
-.card{
+.card-deck{
     margin-left:1rem;
 }
 
