@@ -15,25 +15,31 @@
 </head>
 <body class="Ba">
     <section>
-        <header class="BA-head">
-            <nav class="temp-nav">
-                <div class="link-temp">
-                    <a href="index.html" class="link-tp">
-                        <i class="fas fa-home"></i>
-                    </a>
-                    <a href="" class="link-tp">
-                        Preferencial
-                    </a>
-                    <a href="" class="link-tp">
-                        Pyme
-                    </a>
-                    <a href="" class="link-tp">
-                        Empresas y Gobierno
-                    </a>
-                    <a href="" class="btn-temp-1" type="submit">Atención al cliente</a>
-                    <a href="" class="btn-temp" type="submit">Puntos de servicio</a>
-                </div>
-            </nav>
+        <nav class="temp-nav">
+            <div class="link-temp">
+                <a href="index.html" class="link-tp">
+                    <i class="fas fa-home"></i>
+                </a>
+                <a href="" class="link-tp">
+                    Preferencial
+                </a>
+                <a href="" class="link-tp">
+                    Pyme
+                </a>
+                <a href="" class="link-tp">
+                    Empresas y Gobierno
+                </a>
+                <a href="" class="btn-temp-1" type="submit">Atención al cliente</a>
+                <a href="" class="btn-temp" type="submit">Puntos de servicio</a>
+            </div>
+        </nav>
+         <header class="BA-head">
+             <div class="menu_bar">
+                 <a href="#" class="bt-menu">
+                     <img src="~/Content/img/logo.png" />
+                     <span class="fas fa-bars"></span>
+                 </a>
+             </div>
             <nav class="menuBA ">
                 <div>
                     <a href="" class="img-nav"><img src="~/Content/img/logo.png" /></a>
@@ -44,15 +50,221 @@
                     <a href="" class="nav-perm">Seguros</a>
                     <a href="" class="nav-perm">Salvadoreños en el Exterior</a>
                     <a href="" class="nav-perm">Promociones</a>
-                    <a href="" class="e-btn">e-Banca Personas <i class="fas fa-lock"></i></a>
+                    <a href="/Account/Login" class="e-btn">e-Banca Personas <i class="fas fa-lock"></i></a>
+                   @*@Html.ActionLink("e-Banca Personas", "Login", "Account", new { @class = "e-btn"})*@
                 </div>
             </nav>
         </header>
     </section>
         @RenderBody()
     <section>
-        <footer>
-            
+        <nav class="footer-ban">
+            <table>
+                <tr>
+                    <td class="link-footer" >
+                    <h2 class="footer-title">
+                        Contáctanos
+                        </h2>
+                    </td>
+                    <td>
+                        <img src="~/Content/img/messenger.png" />
+                    </td>
+                    <td class="link-footer">
+                        <b>Chat en línea</b>
+                    </td>
+                    <td>
+                        <img src="~/Content/img/headphones.png" />
+                    </td>
+                    <td class="link-footer">
+                        <b>Telebanca</b> 2210-000
+                    </td>
+                    <td>
+                        <img src="~/Content/img/mail.png" />
+                    </td>
+                    <td class="link-footer">
+                        <b>Escríbenos</b>
+                    </td>
+                    <td>
+                        <img src="~/Content/img/homee.png" />
+                    </td>
+                    <td class="link-footer">
+                        <b>Puntos de servicio</b>
+                    </td>
+                </tr>
+            </table>
+            @*<a class="link-footer" href="">
+                <h2 class="footer-title">Contáctanos</h2>
+            </a>
+            <a class="link-footer" href="">
+                <div>
+                    <img src="~/Content/img/messenger.png" />
+                    <b>Chat en línea</b>
+                </div>
+            </a>
+            <a class="link-footer" href="">
+                <div>
+                    <img src="~/Content/img/headphones.png" />
+                    <b>Telebanca</b> 2210-000
+                </div>
+            </a>
+            <a class="link-footer" href="">
+                <div>
+                    <img src="~/Content/img/mail.png" />
+                    <b>Escríbenos</b>
+                </div>
+            </a>
+            <a class="link-footer" href="">
+                <div>
+                    <img src="~/Content/img/homee.png" />
+                    <b>Puntos de servicio</b>
+                </div>
+            </a>*@
+        </nav>
+        <hr />
+        <footer>            
+            <div class="footer-principal">
+                <table class="footer-principal">
+                    <thead>
+                        <tr>
+                            <th>Links directos</th>
+                            <th>Nuestro Banco</th>
+                            <th>Información corporativa</th>
+                            <th>Tasas de interés</th>
+                        </tr>
+                    </thead>                        
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="#" class="table-footer">
+                                    Sala de prensa
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" class="table-footer">
+                                    Somos Banco Agrícola
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" class="table-footer">
+                                    Gobierno Corporativo
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" class="table-footer">
+                                    Tarifas
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#" class="table-footer">
+                                    Mi Casa Banco Agrícola
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" class="table-footer">
+                                    Transparencia
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" class="table-footer">
+                                    Gobierno Valores Banagrícola
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" class="table-footer">
+
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#" class="table-footer">
+                                    Desarrollo sostenible
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" class="table-footer">
+                                    Rincón Mágico
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" class="table-footer">
+                                    Relación con Inversionistas
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" class="table-footer">
+
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#" class="table-footer">
+                                    Innovación
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" class="table-footer">
+                                    Política de Cookies
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" class="table-footer">
+
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" class="table-footer">
+
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <nav class="footer">
+                    <ul>
+                        <li>
+                            <a class="link-footer-facebook" href="https://twitter.com/BancoAgricolaSV">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-footer-twitter" href="https://twitter.com/BancoAgricolaSV">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-footer-youtube" href="https://www.youtube.com/user/BancoAgricolaSV">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-footer-instagram" href="https://www.instagram.com/bancoagricola/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-footer-linkedin" href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQHPlxlxAAcxigAAAXRfGmNY74fmXAo7UT7OJv17a_RaGAnPAq6Q9qxs3QGzDRWdevbCGnms3HCtx7btuESi8o1b1ENA7jH3jQ7t9QIsJgUbr8hYe-ovKJnbFB5EvTkMgmEhH7I=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fbancoagricola">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-footer-google" href="https://play.google.com/store/apps/details?id=com.bancoagricola.bancamovil&hl=en">
+                                <i class="fab fa-google-play"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-footer-app" href="https://apps.apple.com/sv/app/banca-m%C3%B3vil/id667589181">
+                                <i class="fab fa-app-store-ios"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </footer>
     </section>    
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
@@ -61,6 +273,29 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+   <script>
+       $(document).ready(main);
 
+       var contador = 1;
+
+       function main() {
+           $('.menu_bar').click(function () {
+               // $('nav').toggle(); Forma Sencilla de aparecer y desaparecer
+
+               if (contador == 1) {
+                   $('nav').animate({
+                       left: '0'
+                   });
+                   contador = 0;
+               } else {
+                   contador = 1;
+                   $('nav').animate({
+                       left: '-100%'
+                   });
+               };
+
+           });
+       };
+   </script>
 </body>
 </html>

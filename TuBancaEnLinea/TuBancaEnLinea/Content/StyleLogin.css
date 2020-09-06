@@ -1,0 +1,199 @@
+﻿footer{
+    position:absolute;
+    bottom:0;
+    background-color:#F5F7F9;
+    color:#2A4990;    
+    width: 100%;
+    font-weight:500;
+    text-align:center;
+    padding: 1.8rem;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image:url(../Content/img/offline-bg.png);
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:cover;;
+    width: 100%;
+}
+
+header{
+    width:100%;
+    background-color:#F5F7F9;
+}
+
+header img{
+    width:18%;
+    margin-left: 1rem;
+}
+
+
+.myButton {
+	background-color:#00448C;
+	border:1px solid #4e6096;
+	display:inline-block;
+	color:#F5F7F9;
+	font-family: 'Open Sans', sans-serif;
+	padding-left:2.3rem;
+    padding-right:2.3rem;
+    padding-bottom:0.5rem;
+    padding-top:0.5rem;
+	text-decoration:none;
+}
+
+.myButton:hover {
+	background-color:#002B59;
+    color:#F5F7F9;
+    text-decoration:none;
+}
+
+h2.login{
+   font-family: 'Nunito', sans-serif;
+   color:#003387;
+   margin-left: 1.5rem;
+}
+
+
+h3.login-mobile{
+    display:none;
+}
+
+.Login-float{
+    border: 2px solid #003387;
+    width: 60%;
+    background-color:#F5F7F9;
+    float:left;
+    margin:4rem;
+    padding:2rem;
+}
+
+table{
+    width:90%;
+    margin:auto;
+}
+
+table tr{
+    margin:1rem;
+}
+
+table tr td{
+    padding:1rem;
+}
+
+table tr td.myBton{
+  text-align:center;
+}
+
+
+.campo{
+    color:#5E728C;
+}    
+
+.cajitalogin{
+    color:#385E9A;
+    border: 1px solid #708299;
+    width:70%;
+}
+
+@media screen and (max-width: 700px) {
+    *{
+        background-color:#F5F7F9;
+    }
+
+    header img{
+        width:70%;
+    }
+
+    header {
+        text-align:center;
+        max-height: 20%;
+    }
+
+    h3.login-mobile{
+       display:block;
+       font-family: 'Nunito';
+       color:#003387;
+       text-align:center;   
+       font-weight: 800;
+       line-height:0.9;
+       font-size:x-large;
+    }
+     table {
+           width:100%;
+           margin:auto;
+           float:none;
+           padding:0;
+           margin:0;
+       }
+       thead {
+           display: none;
+       }
+       tr:nth-of-type(2n) {
+           background-color: inherit;
+       }
+       tbody td {
+           display: block;
+           text-align:center;
+       }
+       tbody td:before {
+           content: attr(data-th);
+           display: block;
+           text-align:center;
+       }
+
+       footer.mobile-{
+           display:none;
+       }
+
+       .Login-float{
+           display:flex;
+           border: none;
+           align-content:center;
+           margin:auto;
+           text-align:center;
+           width:100%;
+       }
+
+       .cajitalogin{
+           border:none;
+           border-bottom: 1px solid #2A4990;
+           color:#385E9A;
+           width:100%;
+       }
+
+       h2.login{
+           display:none;
+       }
+
+      .myButton {
+	    background-color:#00448C;
+	    border:1px solid #4e6096;
+	    display:inline-block;
+	    color:#F5F7F9;
+	    font-family: 'Open Sans', sans-serif;
+	    padding-left:2.3rem;
+        padding-right:2.3rem;
+        padding-bottom:0.5rem;
+        padding-top:0.5rem;
+	    text-decoration:none;
+        border-radius:20px;
+    }
+
+    .myButton:hover {
+	    background-color:#002B59;
+        color:#F5F7F9;
+        text-decoration:none;
+        border-radius:20px;
+    }
+
+    td{
+        width:100%;
+        padding:0;
+    }
+}

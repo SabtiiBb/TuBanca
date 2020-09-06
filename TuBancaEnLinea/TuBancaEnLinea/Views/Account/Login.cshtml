@@ -1,20 +1,16 @@
 ﻿@model TuBancaEnLinea.Models.LoginVM
 
 @{
-    ViewBag.Title = "Login";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Banco Agrícola";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
 }
-
-<h2>Login</h2>
 
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
     
-    <div class="form-horizontal">
-        <h4>LoginVM</h4>
-        <hr />
+    @*<div class="form-horizontal">
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             @Html.LabelFor(model => model.User, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -42,15 +38,41 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <a href="#" class="myButton">Continuar</a>
             </div>
         </div>
+    </div>*@
+    <h3 class="login-mobile">Bienvenido a la aplicación de Banco Agrícola</h3>
+    <div class="Login-float">
+        <h2 class="login">Bienvenido a e-banca Personas</h2>
+        <table>
+            <tr>
+                <td class="campo">
+                    USUARIO
+                </td>
+                <td>
+                       @Html.EditorFor(model => model.User, new { htmlAttributes = new { @class = "cajitalogin" } })
+                       @Html.ValidationMessageFor(model => model.User, "", new { @class = "text-danger" })
+                </td>
+            </tr>
+            <tr>
+                <td class="campo">
+                    CONTRASEÑA
+                </td>
+                <td>
+                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "cajitalogin" } })
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                </td>
+            </tr>
+            <tr class="myBton">
+                <td colspan="2" class="myBton">
+                    <a href="#" class="myButton">Continuar</a>
+                </td>
+            </tr>
+        </table>
     </div>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

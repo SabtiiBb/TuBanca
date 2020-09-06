@@ -167,8 +167,11 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\img\BancaMovil.jpg" />
+    <Content Include="Content\img\cool-background.png" />
     <Content Include="Content\img\e-banca.jpg" />
     <Content Include="Content\img\Edicio-Administrativo-SJM.jpg" />
+    <Content Include="Content\img\headphones.png" />
+    <Content Include="Content\img\homee.png" />
     <Content Include="Content\img\icon-1-1.png" />
     <Content Include="Content\img\icon-2.png" />
     <Content Include="Content\img\icon-3.png" />
@@ -177,7 +180,11 @@
     <Content Include="Content\img\icon-6.png" />
     <Content Include="Content\img\lg.png" />
     <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\mail.png" />
+    <Content Include="Content\img\messenger.png" />
+    <Content Include="Content\img\offline-bg.png" />
     <Content Include="Content\style.css" />
+    <Content Include="Content\StyleLogin.css" />
     <Content Include="Content\toastr.css" />
     <Content Include="Content\toastr.min.css" />
     <Content Include="favicon.ico" />
@@ -336,11 +343,11 @@
     <Content Include="SweetAlert2\sweetalert2.scss" />
     <Content Include="SweetAlert2\mixins.scss" />
     <Content Include="SweetAlert2\animations.scss" />
-    <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Manage\General.cshtml" />
     <Content Include="Views\Shared\_GeneralLayout.cshtml" />
-    <Content Include="Views\Shared\_Login.cshtml" />
     <Content Include="Views\Manage\Movimientos.cshtml" />
+    <Content Include="Views\Shared\_LoginLayout.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
