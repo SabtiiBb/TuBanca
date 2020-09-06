@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    @Scripts.Render("~/bundles/modernizr")
+        @Styles.Render("~/Content/css/")
+        <link href="~/Content/StyleLogin.css" rel="stylesheet" />
+        <link rel="shortcut icon" href="~/Content/img/lg.png" />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7a98527200.js " crossorigin="anonymous "></script>
+        <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header>
+        <img src="~/Content/img/logo.png" />
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <section>
+        <footer class="mobile-">
+            Banco Agrícola© Todos los derechos reservados.
+        </footer>
+    </section>
+</body>
+</html>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
