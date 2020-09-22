@@ -1,5 +1,6 @@
 ﻿
 .table-DAP{
+    top:4.5rem;
     font-family: inherit;
     position:absolute;
     right:0;
@@ -85,8 +86,11 @@ p {
 
 nav.superior{
     display: flex;
+    position:fixed;
+    z-index:1;
     background-color: #F5F7F9;
     width: 100%;
+    height:5.5rem;
     border-bottom: 3px solid #F5C84B;
 }
 
@@ -137,6 +141,7 @@ a:focus {
 #sidebar {
     width: 140px;
     position: fixed;
+    top:5.5rem;
     left: 0;
     height: 100vh;
     z-index: 999;
@@ -176,13 +181,18 @@ a:focus {
     text-decoration:none;
 }
 
+
+div.foot{
+    
+}
+
 footer{
-    position:absolute;
-    bottom:0;
     background-color:#F5F7F9;
     color:#2A4990;    
-    width: 100%;
     text-align:center;
+    position: fixed;
+    bottom: 0;
+    width:100%;
 }
 
 @media (max-width: 768px) {
