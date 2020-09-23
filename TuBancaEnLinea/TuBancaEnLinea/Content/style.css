@@ -1,10 +1,15 @@
 ﻿
-.table-DAP{
+div.table-DAP {
+    width: 100%;
+}
+
+table.table-DAP{
     top:4.5rem;
     font-family: inherit;
     position:absolute;
     right:0;
     margin: 2rem;
+    z-index:-1;
 }
 
 
@@ -23,7 +28,7 @@ th{
     color:#00448C;
     position:absolute;
     right:0;
-    margin-top:11rem;
+    margin-top:15rem;
     margin-right:3rem;
     border-top: 5px solid;
     border-radius: 15px;
@@ -182,10 +187,6 @@ a:focus {
 }
 
 
-div.foot{
-    
-}
-
 footer{
     background-color:#F5F7F9;
     color:#2A4990;    
@@ -193,6 +194,10 @@ footer{
     position: fixed;
     bottom: 0;
     width:100%;
+}
+
+.mobile-navbar{
+    display:none;
 }
 
 @media (max-width: 768px) {
@@ -219,5 +224,58 @@ footer{
     }
     .numerocuenta{
         display: none;
+    }
+
+    nav.superior{
+        display:none;
+    }
+
+    .mobile-navbar{
+         display:inline;
+         z-index:1;
+    }
+
+    ul.navbar-nav li a i{
+        color: #2A4990;
+    }
+    .mobile-navbar img{
+        width:35%;
+        margin:0;
+        padding:0;
+    }
+    .table-DAP{
+    top:10rem;
+}
+
+    a.navbar-brand{
+        color: #2A4990;
+        font-size:small;
+        
+    }
+
+    div.table-DAP {
+    width: 100%;
+    margin-top:4rem;
+    }
+
+    table.table-DAP{
+        top:7rem;
+        font-family: inherit;
+        position:absolute;
+        right:0;
+        z-index:-1;
+    }
+    .estadocuentacard{
+        width: 70%;
+        height:40%;
+        color:#00448C;
+        position:absolute;
+        right:0;
+        margin-top:3rem;
+        margin-right:3rem;
+        border-top: 5px solid;
+        border-radius: 15px;
+        padding:1rem;
+        background:#F5F7F9;
     }
 }
