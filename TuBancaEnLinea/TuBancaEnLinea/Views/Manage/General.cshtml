@@ -4,32 +4,33 @@
     Layout = "~/Views/Shared/_GeneralLayout.cshtml";
 }
 
-<div class="table-DAP">
-    <table>
-        <tr>
-            <th>
-                &nbsp; Total cuentas: &nbsp;
-            </th>
-            <th>
-                &nbsp; Total préstamos: &nbsp;
-            </th>
-            <th>
-                &nbsp; Total DAP: &nbsp;
-            </th>
-        </tr>
-        <tr>
-            <td>&nbsp;$6 696.26&nbsp;</td>
-            <td>&nbsp;$0.00&nbsp;</td>
-            <td>&nbsp;$0.00&nbsp;</td>
-        </tr>
-    </table>
-</div>
-<section>
+<div class="container">
+    <div class="table-DAP">
+        <table class="table-DAP">
+            <tr>
+                <th>
+                    &nbsp; Total cuentas: &nbsp;
+                </th>
+                <th>
+                    &nbsp; Total préstamos: &nbsp;
+                </th>
+                <th>
+                    &nbsp; Total DAP: &nbsp;
+                </th>
+            </tr>
+            <tr>
+                <td>&nbsp;$6 696.26&nbsp;</td>
+                <td>&nbsp;$0.00&nbsp;</td>
+                <td>&nbsp;$0.00&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    <br />
     <div class="estadocuentacard">
         <div class="grid-container-estado">
             <div class="cuentacard">
                 <div class="textotitle">
-                    <p>                        
+                    <p>
                         003020561413 Cuenta de Ahorros<br />
                         <span class="campo">UNIDOS</span>
                     </p>
@@ -37,55 +38,74 @@
                 <div class="saldo">
                     <div class="disponible">
                         <p>
-                            $6 696.26
+                            003020561413
                             <br />
-                            <span class="campo">SALDO DISPONIBLE</span>
+                            <span class="campo">Deposito a libro</span>
                         </p>
                     </div>
                     <div class="numerocuenta">
                         <p>
-                            003020561413<br />
-                            <span class="campo">N°</span>
-                        </p>                       
+                            TRF_Transac#22501<br />
+                            <span class="campo">COD_</span>
+                        </p>
                     </div>
                     <div class="Movimientos">
                         <p>
-                            <a href="/Manage/Movimientos" >Movimientos</a>
+                            <a href="/Manage/Movimientos">Movimientos</a><br />
                         </p>
                     </div>
                     <div class="servicios">
                         <p>
-                            <a href="#" class="Pagos">Pago de servicios</a>
+                            <a href="#" class="Pagos">Pago de Servicios</a>
                         </p>
                     </div>
-                </div>
-                <div class="estado">
-                    <p>
-                        ACTIVA
-                        <br />
-                        <span class="campo">ACTIVA</span>
-                    </p>
-                    
                 </div>
             </div>
         </div>
     </div>
-</section>
+    <div class="grid-container-mobile">
+        <div class="saldo">
+            <div class="disponible">
+                <p>
+                    003020561413
+                    <br />
+                    <span class="campo">Deposito a libro</span>
+                </p>
+            </div>
+            <div class="numerocuenta">
+                <p>
+                    TRF_Transac#22501<br />
+                    <span class="campo">COD_</span>
+                </p>
+            </div>
+            <div class="servicios">
+                <p>
+                    <a href="/Manage/Movimientos">Movimientos</a><br />
+                </p>
+            </div>
+            <div class="estado">
+                <p>
+                    <a href="#" class="Pagos">Pago de Servicios</a>
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
 
-@section scripts{
-    
-<script>
+    @section scripts{
 
-    $(document).ready(function () {
+        <script>
 
-        $(".Pagos").click("onclick", function () {
-            Swal.fire(
-          'Lo Sentimos!',
-          'Esta opcion no se encuentra disponible por el momento!',
-          'warning')
-        });
+            $(document).ready(function () {
 
-    });
-</script>
+                $(".Pagos").click("onclick", function () {
+                    Swal.fire(
+                  'Lo Sentimos!',
+                  'Esta opcion no se encuentra disponible por el momento!',
+                  'warning')
+                });
+
+            });
+        </script>
 
     }
