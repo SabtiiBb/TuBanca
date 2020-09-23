@@ -21,9 +21,9 @@ namespace TuBancaEnLinea.Controllers
         {
             if (ModelState.IsValid)
             {
-                if(model.User == "Admin" && model.Password == "password")
+                if(model.User == "porfiriioramirez7@gmail.com" && model.Password == "Ramirez220215!")
                 {
-                    return RedirectToAction("", "");
+                    return RedirectToAction("General", "Manage");
                 }
             }
 

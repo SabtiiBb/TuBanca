@@ -18,7 +18,7 @@
             </th>
         </tr>
         <tr>
-            <td>&nbsp;$3 692.45&nbsp;</td>
+            <td>&nbsp;$6 696.26&nbsp;</td>
             <td>&nbsp;$0.00&nbsp;</td>
             <td>&nbsp;$0.00&nbsp;</td>
         </tr>
@@ -37,7 +37,7 @@
                 <div class="saldo">
                     <div class="disponible">
                         <p>
-                            $3 692.45
+                            $6 696.26
                             <br />
                             <span class="campo">SALDO DISPONIBLE</span>
                         </p>
@@ -55,7 +55,7 @@
                     </div>
                     <div class="servicios">
                         <p>
-                            <a href="#">Pago de servicios</a>
+                            <a href="#" class="Pagos">Pago de servicios</a>
                         </p>
                     </div>
                 </div>
@@ -71,3 +71,21 @@
         </div>
     </div>
 </section>
+
+@section scripts{
+    
+<script>
+
+    $(document).ready(function () {
+
+        $(".Pagos").click("onclick", function () {
+            Swal.fire(
+          'Lo Sentimos!',
+          'Esta opcion no se encuentra disponible por el momento!',
+          'warning')
+        });
+
+    });
+</script>
+
+    }

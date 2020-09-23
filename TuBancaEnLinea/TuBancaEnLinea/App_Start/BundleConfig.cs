@@ -11,6 +11,9 @@ namespace TuBancaEnLinea
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/SweetAlert2/js").Include(
+                        "~/Content/SweetAlert2/sweetalert2.all.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
@@ -26,6 +29,9 @@ namespace TuBancaEnLinea
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/bundles/SweetAlert2/css").Include(
+                        "~/Content/SweetAlert2/sweetalert2.css"));
         }
     }
 }
